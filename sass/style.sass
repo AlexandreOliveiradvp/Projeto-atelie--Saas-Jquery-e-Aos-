@@ -22,7 +22,7 @@ div.container
     max-width: 1024px
     margin: 0 auto
 
-/*Estílo header*/
+/*Style header*/
 header
     position: fixed
     top: 0
@@ -30,24 +30,19 @@ header
     height: 80px
     background-color: $rosa
     z-index: 1
-
     div:not(.container)
         width: calc( 100% / 3  )
         height: 100%
-        float: left
-    
+        float: left   
     div.menu 
-        text-align: right
-           
+        text-align: right         
     h2 
         color: white
         font-size: 38px
         padding-top: 10px
         cursor: pointer
-
     a
         text-decoration: none
-
     li 
         display: inline-block
         color: white
@@ -57,20 +52,16 @@ header
         padding-left: 13px
         cursor: pointer
         transition: 0.5s
-
     li:hover 
-        transform: scale(1.2)
-        
+        transform: scale(1.2)      
     div.redessociais 
         text-align: center
-
     i
         font-size: 30px
         padding: 25px 15px
         color: $branco
         cursor: pointer
-        transition: 0.5s
-           
+        transition: 0.5s         
     i:hover
         transform: scale(1.2)
             
@@ -86,36 +77,29 @@ nav.menu-mobile
     text-align: center
     margin-top: 80px
     display: none
-    
-
     li 
         font-size: 17px
         color: black
         border: 1px solid $rosa        
 
-/*Estilo primeira seçao (entrada)*/
+/*Style primeira seçao (entrada)*/
 section.first
     width: 100%
     height: 630px
     background-image: url(../imagens/back_entrada.jpg)
     background-size: cover
-    margin-top: -5px
-       
+    margin-top: -5px    
     div
         position: relative
         top: 240px
         left: 170px
-        max-width: 600px
-
-            
+        max-width: 600px         
     h1 
         color: white
         font-size: 46px
-
     p 
         color: white
         font-size: 17px
-
     button
         width: 200px
         height: 50px
@@ -128,62 +112,47 @@ section.first
         border-radius: 5px
         cursor: pointer
         transition: 0.6s
-
     button:hover
         transform: scale(1.1)
 
-/*Estilo segunda seção (artista)*/
+/*Style segunda seção (artista)*/
 section.second
     width: $tt
     height: 430px
-
     div:not(.container)
         width: 50%
         height: 330px
         float: left
-
     div.img
         background-image: url(../imagens/artesã.jpg)
         margin-top: 50px
-           
-
     div.texto2
         margin-top: 50px
-
-
     h2 
         color: $rosa
         font-size: 28px
         margin-top: -10px
         padding-left: 10px
-
     p 
         padding-left: 10px
         padding-top: 20px
         font-size: 17px
 
-/*Estilo terceira seçao(serviços)*/   
+/*Style terceira seçao(serviços)*/   
 section.third 
     width: $tt
     max-height: 300px
     text-align: center
-
-
     h2 
         color: $rosa
         font-size: 28px
-
     div:not(.container)
         width: calc( 1024px / 3  )
         float: left
         text-align: center
         margin-top: 60px
-
         @media screen and ( max-width: 768px )
-            display: flex
-            
-            
-        
+            display: flex      
     img 
         width: 110px
         height: 115px
@@ -194,7 +163,7 @@ section.third
         font-size: 22px
         margin-top: 20px
 
-/*Estilo quarta seção(depoimentos)*/   
+/*Style quarta seção(depoimentos)*/   
 section.fourth
     width: 100%
     text-align: center
@@ -212,37 +181,30 @@ section.fourth
         float: left
         text-align: center
         border: solid 5px white
-
-
     p 
         font-size: 17px
-
     .img-1, .img-2, .img-3
         width: 70px !important
         height: 70px
         border-radius: 40px
         background-color: #ccc
         margin: 20px 0px 0px 20%
-
     h6 
         font-size: 15px
         color: $azul
         padding: 10% 30% 0 0 
 
 
-//Quinta seção(contato)
+/*Style Quinta seção(contato)*/
 section.fifth
     width: $tt
     text-align: center
-
     form 
         margin-top: 50px
-
     legend
         font-size: 28px
         color: $azul
         font-weight: 500
-
     input[type=text]
         width: 300px
         height: 30px
@@ -251,7 +213,6 @@ section.fifth
         padding: 15px 15px
         border-radius: 5px
         border: 2px solid #1b81f5
-
     textarea[type=text]
         width: 300px
         height: 200px
@@ -260,9 +221,7 @@ section.fifth
         font-size: 14px
         padding: 15px 15px
         border-radius: 5px
-        border: 2px solid #1b81f5
-        
-
+        border: 2px solid #1b81f5        
     input[type=submit]
         width: 300px
         height: 30px
@@ -272,8 +231,7 @@ section.fifth
         border-radius: 5px
         border: 1px solid #1b81f5
         cursor: pointer
-
-    //Estilo footer
+/*Style footer*/
 footer 
     width: $tt
     margin-top: 20px
@@ -285,23 +243,20 @@ footer
 
 
 
-/*****************************************Estilo responsivo******************************************/
+/*Responsives Styles*/
 @media screen and ( max-width: 540px )
 
-    /*estilo header*/
+    /*Style header*/
     header
         position: absolute
         height: 190px
         width: $tt
         display: block
-
         div.logo 
             width: 100%
             text-align: center
-
         div.redessociais 
             width: $tt
-
         div.menu 
             width: $tt
             text-align: center
@@ -309,12 +264,11 @@ footer
                 display: block
                 transform: none
                 margin-top: -20px
-
         nav.menu-desktop
             display: none
 
 
-    /*menu mobile*/
+    /*Style menu mobile*/
     nav.menu-mobile 
         width: 100%
         display: block
@@ -322,15 +276,14 @@ footer
         display: none
         
 
-    /*Estilo primeira seção*/
+    /*Style primeira seção*/
     section.first 
         width: $tt
         text-align: center
-
         div
             left: 0
 
-    /*estilo segunda seção (artista)*/ 
+    /*Style segunda seção (artista)*/ 
     section.second 
         div.img
             display: block
@@ -340,21 +293,40 @@ footer
             display: block
             width: $tt
 
-    /*estilo terceira seção (serviços)*/ 
+    /*Style terceira seção (serviços)*/ 
     section.third 
         margin-top: 400px
         width: $tt
-
         div:not(.container)
             width: $tt
+        div.container
+            div
+                display: block
 
-    /*estilo quarta seção (depoimentos)*/   
+    /*Style quarta seção (depoimentos)*/   
     section.fourth 
         margin-top: 750px
-
         div:not(.container)
             width: $tt
 
-    
+@media screen and ( max-width: 768px )
+
+    header
+        h2
+            font-size: 28px
+            margin-top: 10px
+            padding-left: 10px
+        li 
+            font-size: 14px
+            padding-right: 10px
+        /*Style terceira seção (serviços)*/ 
+    section.third 
+        margin-top: 50px
+        width: $tt
+        div:not(.container)
+            width: $tt
+        div.container
+            div
+                display: block
     
 
