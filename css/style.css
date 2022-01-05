@@ -32,15 +32,18 @@ header {
     text-align: right; }
   header h2 {
     color: white;
-    font-size: 38px;
-    padding-top: 10px;
-    cursor: pointer; }
+    font-size: 32px;
+    padding-top: 15px;
+    cursor: pointer;
+    transition: 0.5s; }
+  header h2:hover {
+    transform: scale(1.2); }
   header a {
     text-decoration: none; }
   header li {
     display: inline-block;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     padding-top: 33px;
     padding-left: 13px;
@@ -71,8 +74,9 @@ nav.menu-mobile {
   display: none; }
   nav.menu-mobile li {
     font-size: 17px;
-    color: black;
-    border: 1px solid #ff5eac; }
+    color: #1b81f5;
+    border: 1px solid #ff5eac;
+    background-color: #E1F5FE; }
 
 /*Style primeira seçao (entrada) */
 section.first {
@@ -80,7 +84,7 @@ section.first {
   height: 630px;
   background-image: url(../imagens/back_entrada.jpg);
   background-size: cover;
-  margin-top: -5px; }
+  margin-top: -8px; }
   section.first div {
     position: relative;
     top: 240px;
@@ -137,15 +141,13 @@ section.third {
   text-align: center; }
   section.third h2 {
     color: #ff5eac;
-    font-size: 28px; }
+    font-size: 28px;
+    margin-top: 50px; }
   section.third div:not(.container) {
     width: calc( 1024px / 3  );
     float: left;
     text-align: center;
     margin-top: 60px; }
-    @media screen and (max-width: 768px) {
-      section.third div:not(.container) {
-        display: flex; } }
   section.third img {
     width: 110px;
     height: 115px;
@@ -218,6 +220,12 @@ section.fifth {
     border-radius: 5px;
     border: 1px solid #1b81f5;
     cursor: pointer; }
+  section.fifth p.form-success {
+    background-color: #64FFDA;
+    margin-top: 5px;
+    color: white;
+    font-weight: 6500;
+    color: #1b81f5; }
 
 /*Style footer */
 footer {
@@ -267,19 +275,22 @@ footer {
       left: 0; }
 
   /*Style segunda seção (artista) */
-  section.second div.img {
-    display: block;
-    width: 100%; }
-  section.second div.texto2 {
-    display: block;
-    width: 100%; }
+  section.second {
+    margin-bottom: 350px; }
+    section.second div.img {
+      display: block;
+      width: 100%;
+      margin-top: 0px; }
+    section.second div.texto2 {
+      display: block;
+      width: 100%; }
 
   /*Style terceira seção (serviços) */
   section.third {
-    margin-top: 400px;
     width: 100%; }
     section.third div:not(.container) {
-      width: 100%; }
+      width: 100%;
+      display: flex; }
     section.third div.container div {
       display: block; }
 

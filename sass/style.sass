@@ -1,5 +1,5 @@
 
-$fontsize_mn: 16px
+$fontsize_mn: 14px
 $rosa : #ff5eac
 $branco: #ffffff
 $azul: #1b81f5
@@ -38,9 +38,12 @@ header
         text-align: right         
     h2 
         color: white
-        font-size: 38px
-        padding-top: 10px
+        font-size: 32px
+        padding-top: 15px
         cursor: pointer
+        transition: 0.5s
+    h2:hover
+        transform: scale(1.2)
     a
         text-decoration: none
     li 
@@ -79,8 +82,9 @@ nav.menu-mobile
     display: none
     li 
         font-size: 17px
-        color: black
-        border: 1px solid $rosa        
+        color: $azul
+        border: 1px solid $rosa
+        background-color: #E1F5FE        
 
 /*Style primeira seçao (entrada)*/
 section.first
@@ -88,7 +92,7 @@ section.first
     height: 630px
     background-image: url(../imagens/back_entrada.jpg)
     background-size: cover
-    margin-top: -5px    
+    margin-top: -8px   
     div
         position: relative
         top: 240px
@@ -146,18 +150,16 @@ section.third
     h2 
         color: $rosa
         font-size: 28px
+        margin-top: 50px
     div:not(.container)
         width: calc( 1024px / 3  )
         float: left
         text-align: center
-        margin-top: 60px
-        @media screen and ( max-width: 768px )
-            display: flex      
+        margin-top: 60px 
     img 
         width: 110px
         height: 115px
         cursor: pointer
-
     h3 
         color: $rosa
         font-size: 22px
@@ -167,15 +169,11 @@ section.third
 section.fourth
     width: 100%
     text-align: center
-    margin-top: 300px
-        
+    margin-top: 300px      
     h2 
         color: $rosa
         font-size: 28px
-        margin: 40px 0
-            
-
-        
+        margin: 40px 0     
     div:not(.container)
         width: calc( 100% / 3 )
         float: left
@@ -193,8 +191,6 @@ section.fourth
         font-size: 15px
         color: $azul
         padding: 10% 30% 0 0 
-
-
 /*Style Quinta seção(contato)*/
 section.fifth
     width: $tt
@@ -221,16 +217,22 @@ section.fifth
         font-size: 14px
         padding: 15px 15px
         border-radius: 5px
-        border: 2px solid #1b81f5        
+        border: 2px solid $azul      
     input[type=submit]
         width: 300px
         height: 30px
-        background-color: #1b81f5
+        background-color: $azul
         color: $branco
         font-size: 16px
         border-radius: 5px
-        border: 1px solid #1b81f5
+        border: 1px solid $azul
         cursor: pointer
+    p.form-success
+        background-color: #64FFDA
+        margin-top: 5px
+        color: white
+        font-weight: 6500
+        color: $azul
 /*Style footer*/
 footer 
     width: $tt
@@ -241,11 +243,8 @@ footer
     font-size: 14px
     padding: 15px 15px
 
-
-
 /*Responsives Styles*/
 @media screen and ( max-width: 540px )
-
     /*Style header*/
     header
         position: absolute
@@ -266,51 +265,43 @@ footer
                 margin-top: -20px
         nav.menu-desktop
             display: none
-
-
     /*Style menu mobile*/
     nav.menu-mobile 
         width: 100%
         display: block
         margin-top: 190px
         display: none
-        
-
     /*Style primeira seção*/
     section.first 
         width: $tt
         text-align: center
         div
             left: 0
-
     /*Style segunda seção (artista)*/ 
     section.second 
+        margin-bottom: 350px
         div.img
             display: block
             width: $tt
-
+            margin-top: 0px
         div.texto2 
             display: block
             width: $tt
-
     /*Style terceira seção (serviços)*/ 
     section.third 
-        margin-top: 400px
         width: $tt
         div:not(.container)
             width: $tt
+            display: flex 
         div.container
             div
                 display: block
-
     /*Style quarta seção (depoimentos)*/   
     section.fourth 
         margin-top: 750px
         div:not(.container)
             width: $tt
-
 @media screen and ( max-width: 768px )
-
     header
         h2
             font-size: 28px
